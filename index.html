@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+    <style>
+        html {
+            background-color: rgb(110, 110, 110);
+        }
+
+        .container {
+            margin: auto;
+            display: flex;
+            width: 900px;
+        }
+
+        .card {
+            margin: 20px;
+            width: 400px;
+            height: 260px;
+            border-radius: 16px;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .name {
+            font-size: xx-large;
+            font-weight: 500;
+        }
+
+        .position {
+            font-size: x-large;
+            font-weight: 450;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        .card_content {
+            position: relative;
+        }
+
+        .card_content img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card_content:hover img {
+            opacity: 0.4;
+            transform: rotateY(180deg);
+            transition: .5s;
+        }
+
+        .detials {
+            position: absolute;
+            bottom: -65px;
+            color: white;
+        }
+
+        .card:hover .detials {
+            bottom: 0px;
+            transition: .5s;
+        }
+
+        .contact {
+            background-color: rgba(255, 255, 255, 0.658);
+            height: 50px;
+            width: 400px;
+        }
+
+        .social-icons {
+            height: 100%;
+            display: flex;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        a {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card_content">
+                <img src="https://picsum.photos/id/823/600/400" alt="">
+                <div class="detials">
+                    <p class="name">Amy Lin</p>
+                    <p class="position">UI Developer</p>
+                    <p class="say">Lorem ipsum dolor, sit amet consedt.</p>
+                    <div class="contact">
+                        <ul class="social-icons">
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-facebook-f"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-instagram"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-twitter"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-dribbble"></i>
+                              </a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_content">
+                <img src="https://picsum.photos/id/548/600/400" alt="">
+                <div class="detials">
+                    <p class="name">Jane Doe</p>
+                    <p class="position">UI Designer</p>
+                    <p class="say">Lorem ipsum dolor, sit amet consedt.</p>
+                    <div class="contact">
+                        <ul class="social-icons">
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-facebook-f"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-instagram"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-twitter"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-dribbble"></i>
+                              </a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
